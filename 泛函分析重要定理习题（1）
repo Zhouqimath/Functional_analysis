@@ -1,0 +1,29 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{CJK}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\begin{CJK}{GBK}{song}
+\title{泛函分析重要定理习题（\uppercase\expandafter{\romannumeral1}）\footnote{参考《泛函分析讲义》（张恭庆）}}
+\author{周歧}
+\maketitle
+
+\begin{spacing}{2.0}
+\begin{enumerate}
+  \item $T:(\mathscr{X},\rho)\rightarrow (\mathscr{Y},r)$是连续的$\Leftrightarrow \forall \varepsilon >0,\forall x_{0}\in \mathscr{X},\exists \delta=\delta(x_{0},\varepsilon)>0$使得$\rho(x,x_{0})<\delta$，有$r(x,x_{0})<\varepsilon$（$\forall x\in \mathscr{X}$）。
+  \item（\emph{Banach}不动点原理-压缩映像原理）\quad 设$(\mathscr{X},\rho)$是一个完备的距离空间，$T$是$(\mathscr{X},\rho)$到其自身的一个压缩映像，则$T$在$\mathscr{X}$上存在唯一的不动点。
+  \item 若$(\mathscr{X},\rho)$是度量空间，集合$E\subset\mathscr{X}$叫做$\mathscr{X}$中的稠密子集，如果$\forall x\in \mathscr{X},\forall\varepsilon>0,\exists z\in E$，使得$\rho(x,z)<\varepsilon$，即：$\forall x\in\mathscr{X},\exists\{x_{n}\}$，使得$x_{n}\rightarrow x$。
+  \item 每一个度量空间有一个完备化空间。
+  \item （\emph{Hausdorff}）完备距离空间$(\mathscr{X},\rho)$中的集合$M$是列紧的$\Leftrightarrow M$是完全有界的。
+  \item 完全有界的距离空间是可分的。
+  \item 设$(\mathscr{X},\rho)$是一个距离空间，$M\subset \mathscr{X}$是紧的$\Leftrightarrow M$是自列紧的。
+  \item （\emph{Arzela-Ascoli}）$F\subset C(M)$是一个列紧集$\Leftrightarrow F$是一致有界且等度连续的函数族。
+\end{enumerate}
+\end{spacing}
+
+\end{CJK}
+\end{document}
